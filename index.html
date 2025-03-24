@@ -1,1 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+</head>
+<body>
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Ordered List with Roman Numerals</h2>
+    <ol type="I">
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+        <li>Fourth Item</li>
+        <li>Fifth Item</li>
+    </ol>
 
+    <!-- External Image from Pexels -->
+    <h2>Image from Pexels</h2>
+    <img src="https://images.pexels.com/photos/3244513/pexels-photo-3244513.jpeg" 
+         alt="Beautiful landscape from Pexels" width="450px">
+
+    <!-- Contacts Table -->
+    <h2>Contacts Table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>123 </td>
+                <td>0700112233</td>
+                <td>john@example.com</td>
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>456</td>
+                <td>0199887766</td>
+                <td>jane@example.com</td>
+            </tr>
+            <tr>
+                <td>Michael John</td>
+                <td>789</td>
+                <td>0100000000</td>
+                <td>michael.j@example.com</td>
+            </tr>
+            <tr>
+                <td>Sarah Williams</td>
+                <td>333</td>
+                <td>0744556677</td>
+                <td>sarah.w@example.com</td>
+            </tr>
+            <tr>
+                <td>Robert Brown</td>
+                <td>654 </td>
+                <td>1022334455</td>
+                <td>robert@example.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form id="registrationForm">
+        <!-- Name Field -->
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        </div>
+
+        <!-- Email Field -->
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <!-- Password Field -->
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" 
+                   placeholder="Enter your password" 
+                   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                   title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                   required>
+        </div>
+
+        <!-- Date Field -->
+        <div>
+            <label for="birthdate">Date of Birth:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+        </div>
+
+        <!-- Dropdown Field -->
+        <div>
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select your country</option>
+                <option value="usa">United States</option>
+                <option value="canada">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="australia">Australia</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <!-- Radio Buttons -->
+        <div>
+            <label>Gender:</label>
+            <div>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other-gender" name="gender" value="other">
+                <label for="other-gender">Other</label>
+            </div>
+        </div>
+
+        <!-- Checkboxes -->
+        <div>
+            <label>Interests:</label>
+            <div>
+                <input type="checkbox" id="tech" name="interests" value="tech">
+                <label for="tech">Technology</label>
+                <input type="checkbox" id="sports" name="interests" value="sports">
+                <label for="sports">Sports</label>
+                <input type="checkbox" id="music" name="interests" value="music">
+                <label for="music">Music</label>
+                <input type="checkbox" id="art" name="interests" value="art">
+                <label for="art">Art</label>
+            </div>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
